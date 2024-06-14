@@ -1,5 +1,40 @@
-@import 'variables';
+@import 'config';
+@import 'utilities';
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  color: $text-color;
+  font-family: 'Dosis', sans-serif;
+
+  line-height: 1.6;
+  background: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
 }
