@@ -1,27 +1,28 @@
-// Variables
-$website-width: 1280px;
-$main-color: #ffd000;
-$main-light-color: #ffec9a;
-$success-color: #4caf51;
-$success-light-color: #e4f3e5;
-$light-color: #ebebeb;
-$dark-color: #424242;
-$text-color: #000;
-$text-secondary-color: #666666;
-$background-color: #eeeeee;
-$gradient-color: #edf6fb;
-// $font
-// 'Axiforma', sans-serif;
-$transition-duration: 0.3s;
+// // Variables
+// // $website-width: 1280px;
+// $website-width: 430px;
+// $main-color: #ffd000;
+// $main-light-color: #ffec9a;
+// $success-color: #4caf51;
+// $success-light-color: #e4f3e5;
+// $light-color: #ebebeb;
+// $dark-color: #424242;
+// $text-color: #000;
+// $text-secondary-color: #666666;
+// $background-color: #eeeeee;
+// $gradient-color: #edf6fb;
+// // $font
+// // 'Axiforma', sans-serif;
+// $transition-duration: 0.3s;
 
-// $shadow-sm:;
-// $shadow-lg:;
+// // $shadow-sm:;
+// // $shadow-lg:;
 
-// Set Text Color
-@function set-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return $dark-color;
-  } @else {
-    @return $light-color;
-  }
-}
+// // Set Text Color
+// @function set-text-color($color) {
+//   @if (lightness($color) > 50) {
+//     @return $dark-color;
+//   } @else {
+//     @return $light-color;
+//   }
+// }

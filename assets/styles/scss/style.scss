@@ -2,39 +2,40 @@
 @import 'utilities';
 
 // General Styles
-* {
-  margin: 0;
-  padding: 0;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
 
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
-body {
-  font-family: 'Dosis', sans-serif;
+// body {
+//   font-family: 'Poppins', sans-serif;
+//   font-weight: 400;
+//   font-style: normal;
+//   line-height: 1.6;
+//   background: $background-color;
+// }
 
-  line-height: 1.6;
-  background: $background-color;
-}
+// a {
+//   text-decoration: none;
+//   color: $dark-color;
+// }
 
-a {
-  text-decoration: none;
-  color: $dark-color;
-}
+// ul {
+//   list-style: none;
+// }
 
-ul {
-  list-style: none;
-}
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-weight: normal;
+// }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
-
-img {
-  width: 100%;
-}
+// img {
+//   width: 100%;
+// }
