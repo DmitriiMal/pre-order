@@ -1,22 +1,21 @@
 <template>
   <div>
     <v-bottom-navigation>
-      <v-btn value="recent">
-        <v-icon>mdi-history</v-icon>
-
-        <span>Recent</span>
+      <v-btn value="group">
+        <v-icon>mdi-account-multiple</v-icon>
+        <span>Group</span>
       </v-btn>
 
-      <v-btn value="favorites">
-        <v-icon>mdi-heart</v-icon>
+      <v-btn value="order">
+        <v-icon>mdi-cart</v-icon>
 
-        <span>Favorites</span>
+        <span>Order</span>
       </v-btn>
 
-      <v-btn value="nearby">
-        <v-icon>mdi-map-marker</v-icon>
+      <v-btn value="feinkost">
+        <v-icon>mdi-food</v-icon>
 
-        <span>Nearby</span>
+        <span>Feinkost</span>
       </v-btn>
     </v-bottom-navigation>
   </div>
