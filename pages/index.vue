@@ -21,7 +21,16 @@
     </v-card>
     <!-- Button to submit the group order, should be clickable only if every member has added an order  -->
     <v-btn v-if="orderedMembersCount === members.length" color="amber-lighten-1" :ripple="false" rounded="xl" size="large" elevation="0" block class="my-5" prepend-icon="mdi-check">Submit Group Order</v-btn>
-    <v-btn v-else variant="tonal" :ripple="false" rounded="xl" size="large" block class="my-5" prepend-icon="mdi-check">Submit Group Order</v-btn>
+    <!-- To send a group order, each participant needs first submit their own order -->
+    <v-btn v-else @click="snackbar = true" variant="tonal" :ripple="false" rounded="xl" size="large" block class="my-5 cursor-not-allowed" prepend-icon="mdi-check">Submit Group Order</v-btn>
+    <!-- The snackbar tells, that everyone has to submit an order -->
+    <v-snackbar v-model="snackbar" :timeout="timeout">
+      {{ text }}
+      <template v-slot:actions>
+        <!-- <v-btn color="amber-lighten-1" variant="text" @click="snackbar = false"> Close </v-btn> -->
+        <v-btn color="amber-lighten-1" variant="outline" icon="mdi-close" size="small" @click="snackbar = false"></v-btn>
+      </template>
+    </v-snackbar>
     <!-- This card contains info about members and they're orders -->
     <v-card elevation="3" class="pa-0">
       <v-list>
@@ -69,6 +78,10 @@ export default {
       { name: 'Robert', orderStatus: 'no', order: '', logedIn: false },
       { name: 'Lisa', orderStatus: 'no', order: '', logedIn: false },
     ],
+
+    snackbar: false,
+    text: 'To send a group order, each participant needs first submit their own order',
+    timeout: 2000,
   }),
 
   // Count members, who's already ordered
