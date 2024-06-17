@@ -1,16 +1,22 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer">
-      <!--  -->
-      <nuxtLink to="/feinkost">My Group</nuxtLink>
+      <v-list class="ms-5 mt-16">
+        <v-list-item to="/feinkost">My Group</v-list-item>
+        <v-list-item to="/feinkost">Account</v-list-item>
+        <v-list-item to="/feinkost">History</v-list-item>
+        <v-list-item to="/feinkost">Favorits</v-list-item>
+      </v-list>
     </v-navigation-drawer>
 
     <v-app-bar :elevation="4" class="bg-amber-lighten-1">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-app-bar-title>Application</v-app-bar-title>
+      <nuxtLink to="/" class="text-decoration-none text-black">
+        <!-- This title should change dynamically, depending on the current page  -->
+        <v-app-bar-title> Application </v-app-bar-title>
+      </nuxtLink>
       <template v-slot:append>
-        <!-- <v-btn icon="mdi-heart"></v-btn> -->
         <v-btn icon="mdi-magnify"></v-btn>
         <v-btn icon="mdi-dots-vertical"></v-btn>
       </template>
@@ -27,13 +33,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+// import { ref } from 'vue';
 
 const drawer = ref(null);
 </script>
 
-<script>
+<!-- <script>
 export default {
   data: () => ({ drawer: null }),
 };
-</script>
+</script> -->

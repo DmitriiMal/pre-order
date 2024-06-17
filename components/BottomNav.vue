@@ -6,13 +6,13 @@
         <span>Group</span>
       </v-btn>
 
-      <v-btn value="order">
+      <v-btn value="order" to="/">
         <v-icon>mdi-cart</v-icon>
 
         <span>Order</span>
       </v-btn>
 
-      <v-btn value="feinkost">
+      <v-btn value="feinkost" to="/feinkost">
         <v-icon>mdi-food</v-icon>
 
         <span>Feinkost</span>
