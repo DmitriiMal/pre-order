@@ -81,7 +81,7 @@ export default {
 
     snackbar: false,
     text: 'To send a group order, each participant needs first submit their own order',
-    timeout: 2000,
+    timeout: 4000,
   }),
 
   // Count members, who's already ordered
