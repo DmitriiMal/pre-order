@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex align-center justify-space-between">
       <!-- Name of the group -->
-      <h1 class="text-h5 me-7">Code Monkeys</h1>
+      <h1 class="text-sm-h4 text-h5 me-7">Code Monkeys</h1>
       <!-- Button to change/leave/create group -->
       <v-btn :ripple="false" rounded="xl" class="ma-5" variant="tonal">Change</v-btn>
     </div>
