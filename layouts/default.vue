@@ -2,10 +2,10 @@
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer">
       <v-list class="ms-5 mt-16">
-        <v-list-item to="/feinkost">My Group</v-list-item>
-        <v-list-item to="/feinkost">Account</v-list-item>
-        <v-list-item to="/feinkost">History</v-list-item>
-        <v-list-item to="/feinkost">Favorits</v-list-item>
+        <v-list-item to="">My Group</v-list-item>
+        <v-list-item to="">Account</v-list-item>
+        <v-list-item to="">History</v-list-item>
+        <v-list-item to="">Favorits</v-list-item>
       </v-list>
     </v-navigation-drawer>
 

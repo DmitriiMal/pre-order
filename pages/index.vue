@@ -56,7 +56,7 @@
           <!-- The order is shown if it is submited -->
           <v-list-item-subtitle v-if="member.orderStatus === 'yes'" v-text="member.order" class="mb-3"></v-list-item-subtitle>
           <!-- The button is shown if the user is logged in and hasn't ordered yet -->
-          <v-btn v-if="member.logedIn && member.orderStatus !== 'yes'" to="/" :ripple="false" rounded="xl" color="amber-lighten-1" size="large" block class="my-5" prepend-icon="mdi-plus" elevation="0">Add your items</v-btn>
+          <v-btn v-if="member.logedIn && member.orderStatus !== 'yes'" to="/feinkost" :ripple="false" rounded="xl" color="amber-lighten-1" size="large" block class="my-5" prepend-icon="mdi-plus" elevation="0">Add your items</v-btn>
         </v-list-item>
       </v-list>
     </v-card>
