@@ -10,7 +10,7 @@
         </v-card>
       </v-col> -->
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card>
+        <v-card :to="card.link">
           <v-img :src="card.src" class="align-end" height="200px" cover>
             <v-card-title class="" v-text="card.title"></v-card-title>
           </v-img>
@@ -29,9 +29,9 @@ function getImageUrl(name, ext) {
 export default {
   data: () => ({
     cards: [
-      { title: 'Special of the day', src: getImageUrl('specials', 'png'), flex: 12 },
-      { title: 'BILLA Originals', src: getImageUrl('originals', 'png'), flex: 6 },
-      { title: 'Build your own', src: getImageUrl('custom', 'png'), flex: 6 },
+      { title: 'Special of the day', link: '/products/special', src: getImageUrl('specials', 'png'), flex: 12 },
+      { title: 'BILLA Originals', link: '/products/originals', src: getImageUrl('originals', 'png'), flex: 6 },
+      { title: 'Build your own', link: '/products/custom', src: getImageUrl('custom', 'png'), flex: 6 },
     ],
   }),
 };
