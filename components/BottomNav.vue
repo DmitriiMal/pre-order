@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-bottom-navigation>
-      <v-btn value="group">
+      <!-- <v-btn value="group">
         <v-icon>mdi-account-multiple</v-icon>
         <span>Group</span>
-      </v-btn>
+      </v-btn> -->
 
       <v-btn value="order" to="/">
         <v-icon>mdi-cart</v-icon>

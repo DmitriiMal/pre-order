@@ -12,15 +12,18 @@
     <v-row dense>
       <v-col v-for="card in cards" v-show="card.isSpecial" :key="card.title" :cols="card.flex">
         <v-card :to="card.link" max-height="400px" max-width="500px">
-          <v-img :src="card.src" cover :aspect-ratio="4 / 3">
-            <v-row style="height: 100%">
+          <v-img :src="card.src" cover :aspect-ratio="4 / 3" class="d-flex">
+            <v-row no-gutters>
               <v-col align-self="start">
-                <p class="ms-4 mt-4 pb-0 font-weight-regular text-uppercase">Special of the day</p>
+                <p class="ms-4 mt-2 pb-0 text-overline">Special of the day</p>
                 <v-card-title class="py-0" v-text="card.title"></v-card-title>
                 <v-chip color="red" class="ms-4 px-4"><v-icon icon="mdi-alert-circle" start></v-icon>only 3 left</v-chip>
               </v-col>
-              <v-col class="d-flex align-center" align-self="end">
-                <h2 class="d-inline me-3">€ 2,39</h2>
+            </v-row>
+            <v-row class="h-100">
+              <!-- <v-col cols="auto"></v-col> -->
+              <v-col cols="auto" class="d-flex align-center mb-4 ms-auto me-3" align-self="en">
+                <h2 class="d-inline me-2">€ 2,39</h2>
                 <v-btn elevation="2" color="amber-lighten-1" icon="mdi-cart-plus"></v-btn>
               </v-col>
             </v-row>

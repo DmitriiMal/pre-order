@@ -20,7 +20,7 @@
       </v-list>
     </v-card>
     <!-- Button to submit the group order, should be clickable only if every member has added an order  -->
-    <v-btn v-if="orderedMembersCount === members.length" color="amber-lighten-1" :ripple="false" rounded="xl" size="large" elevation="0" block class="my-5" prepend-icon="mdi-check">Submit Group Order</v-btn>
+    <v-btn v-if="orderedMembersCount === members.length" color="amber-lighten-1" :ripple="false" rounded="xl" size="large" block class="my-5" prepend-icon="mdi-check">Submit Group Order</v-btn>
     <!-- To send a group order, each participant needs first submit their own order -->
     <v-btn v-else @click="snackbar = true" variant="tonal" :ripple="false" rounded="xl" size="large" block class="my-5 cursor-not-allowed" prepend-icon="mdi-check">Submit Group Order</v-btn>
     <!-- The snackbar tells, that everyone has to submit an order -->
@@ -56,7 +56,7 @@
           <!-- The order is shown if it is submited -->
           <v-list-item-subtitle v-if="member.orderStatus === 'yes'" v-text="member.order" class="mb-3"></v-list-item-subtitle>
           <!-- The button is shown if the user is logged in and hasn't ordered yet -->
-          <v-btn v-if="member.logedIn && member.orderStatus !== 'yes'" to="/feinkost" :ripple="false" rounded="xl" color="amber-lighten-1" size="large" block class="my-5" prepend-icon="mdi-plus" elevation="0">Add your items</v-btn>
+          <v-btn v-if="member.logedIn && member.orderStatus !== 'yes'" to="/feinkost" :ripple="false" rounded="xl" color="amber-lighten-1" size="large" block class="my-5" prepend-icon="mdi-plus">Add your items</v-btn>
         </v-list-item>
       </v-list>
     </v-card>

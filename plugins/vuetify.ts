@@ -6,6 +6,15 @@ export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     components,
     directives,
+    defaults: {
+      VBtn: {
+        elevation: '0',
+        ripple: 'false', // ??
+      },
+    },
+    theme: {
+      defaultTheme: 'light',
+    },
   });
   nuxtApp.vueApp.use(vuetify);
 });
