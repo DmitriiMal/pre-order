@@ -23,7 +23,7 @@
             <v-row class="h-100">
               <!-- <v-col cols="auto"></v-col> -->
               <v-col cols="auto" class="d-flex align-center mb-4 ms-auto me-3" align-self="en">
-                <h2 class="d-inline me-2">€ 2,39</h2>
+                <h2 class="me-2">€ 2,39</h2>
                 <v-btn elevation="2" color="amber-lighten-1" icon="mdi-cart-plus"></v-btn>
               </v-col>
             </v-row>
